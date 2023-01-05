@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react'
 
-export const GifGridItem = ({ id, title, images }) => {
-  return (
-    <div className="card">
-      <p> {title}</p>
-      <img src={images} alt={title} />
-    </div>
-  );
-};
+export const GifGridItem = ({ title, url }) => {
+
+    return (
+        <div className="card animate__animated animate__fadeIn">
+            <img src={ url } alt={ title } />
+            <p> { title } </p>
+        </div>
+    )
+}
